@@ -76,3 +76,14 @@ console.log(typeof newVariable);
 
 newVariable = true;
 console.log(typeof newVariable);
+
+
+
+//Task (change kelvins to celsius and then celsius to fahrenheit)
+let kelvin = 293;
+let celsius = kelvin - 273;
+let fahrenheit = Math.floor(celsius * (9/5) + 32);
+
+console.log('Kelvin: ' + kelvin);
+console.log('Celsius: ' + celsius);
+console.log('Fahrenheit: ' + fahrenheit);
