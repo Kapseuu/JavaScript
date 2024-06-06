@@ -40,7 +40,7 @@ console.log('The value of quarterMe:', quarterMe);
 
 
 
-//++ and --
+//The Increment and Decrement Operator
 let gainedDollar = 3;
 let lostDollar = 50;
 
@@ -49,3 +49,30 @@ lostDollar --;
 
 console.log(gainedDollar);
 console.log(lostDollar);
+
+
+
+//String Concatenation with Variables
+let favoriteAnimal = 'wolf';
+
+console.log('My favorite animal: ' + favoriteAnimal);
+
+
+
+//String Interpolation
+let myName = 'Kacper';
+let myCity = 'Bytom';
+
+console.log(`My name is ${myName}. My favorite city is ${myCity}.`);
+
+
+
+//typeof operator
+let newVariable = 'Playing around with typeof.';
+console.log(typeof newVariable);
+
+newVariable = 1;
+console.log(typeof newVariable);
+
+newVariable = true;
+console.log(typeof newVariable);
