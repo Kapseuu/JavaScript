@@ -7,4 +7,9 @@ console.log(10 - 19.49);
 console.log(10 * 0.12);
 console.log(10 / 5);
 console.log('Hello'.length);
-console.log('Teaching the world how to code'.length)
+console.log('Teaching the world how to code'.length);
+console.log('Codecademy'.toUpperCase());
+console.log('    Remove whitespace   '.trim());
+console.log(Math.floor(Math.random() * 100));
+console.log(Math.ceil(43.8));
+console.log(Number.isInteger(2017));
