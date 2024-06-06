@@ -103,5 +103,4 @@ console.log(laterYears);
 let myAgeInDogYears = earlyYears + laterYears;
 let myNameDogTask = 'Kacper'.toLowerCase();
 
-console.log(`My name is ${myNameDogTask}. I am ${myAge} years old in human years which is ${myAgeInDogYears} years old in dog years.
-`);
+console.log(`My name is ${myNameDogTask}. I am ${myAge} years old in human years which is ${myAgeInDogYears} years old in dog years.`);
