@@ -1,5 +1,5 @@
 //Var
-var favoriteFood = 'pizza';
+var favoriteFood = "pizza";
 var numOfSlices = 8
 
 console.log(favoriteFood);
@@ -16,8 +16,8 @@ console.log(changeMe);
 
 
 //Const
-const entree = 'Enchiladas';
-// entree='Tacos;' <-- would not work
+const entree = "Enchiladas";
+// entree="Tacos;" <-- would not work
 console.log(entree);
 
 
@@ -33,10 +33,10 @@ powerLevel -= 100;
 multiplyMe *= 11;
 quarterMe /= 4;
 
-console.log('The value of levelUp:', levelUp); 
-console.log('The value of powerLevel:', powerLevel); 
-console.log('The value of multiplyMe:', multiplyMe); 
-console.log('The value of quarterMe:', quarterMe);
+console.log("The value of levelUp:", levelUp); 
+console.log("The value of powerLevel:", powerLevel); 
+console.log("The value of multiplyMe:", multiplyMe); 
+console.log("The value of quarterMe:", quarterMe);
 
 
 
@@ -53,22 +53,22 @@ console.log(lostDollar);
 
 
 //String Concatenation with Variables
-let favoriteAnimal = 'wolf';
+let favoriteAnimal = "wolf";
 
-console.log('My favorite animal: ' + favoriteAnimal);
+console.log("My favorite animal: " + favoriteAnimal);
 
 
 
 //String Interpolation
-let myName = 'Kacper';
-let myCity = 'Bytom';
+let myName = "Kacper";
+let myCity = "Bytom";
 
 console.log(`My name is ${myName}. My favorite city is ${myCity}.`);
 
 
 
 //typeof operator
-let newVariable = 'Playing around with typeof.';
+let newVariable = "Playing around with typeof.";
 console.log(typeof newVariable);
 
 newVariable = 1;
@@ -84,9 +84,9 @@ let kelvin = 293;
 let celsius = kelvin - 273;
 let fahrenheit = Math.floor(celsius * (9/5) + 32);
 
-console.log('Kelvin: ' + kelvin);
-console.log('Celsius: ' + celsius);
-console.log('Fahrenheit: ' + fahrenheit);
+console.log("Kelvin: " + kelvin);
+console.log("Celsius: " + celsius);
+console.log("Fahrenheit: " + fahrenheit);
 
 
 
@@ -101,6 +101,6 @@ console.log(earlyYears);
 console.log(laterYears);
 
 let myAgeInDogYears = earlyYears + laterYears;
-let myNameDogTask = 'Kacper'.toLowerCase();
+let myNameDogTask = "Kacper".toLowerCase();
 
 console.log(`My name is ${myNameDogTask}. I am ${myAge} years old in human years which is ${myAgeInDogYears} years old in dog years.`);
