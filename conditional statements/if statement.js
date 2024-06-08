@@ -116,3 +116,60 @@ switch(athleteFinalPosition){
     console.log("No medal awarded.");
     break;
 }
+
+
+
+// Task (eight ball)
+let userName = "Kacper";
+userName ? console.log(`Hello, ${userName}!`): console.log("Hello!");
+
+let userQuestion = "How lucky am I?";
+console.log(userQuestion);
+
+let randomNumber = Math.floor(Math.random() * 8);
+let eightBall = randomNumber;
+
+switch(randomNumber){
+  case 0:
+    console.log("Outlook not so good");
+    break;
+  case 1:
+    console.log("My sources say no");
+    break;
+  case 2:
+    console.log("Do not count on it");
+    break;
+  case 3:
+    console.log("Cannot predict now");
+    break;
+  case 4:
+    console.log("Reply hazy try again");
+    break;
+  case 5:
+    console.log("Signs point to yes");
+    break;
+  case 6:
+    console.log("It is decidedly so");
+    break;
+  case 7:
+    console.log("It is certain");
+    break;
+}
+
+
+
+//Task (Race day)
+let raceNumber = Math.floor(Math.random() * 1000);
+let registeredEarly = true;
+let runnerAge = 18;
+
+if(runnerAge > 18 && registeredEarly){
+  raceNumber += 1000;
+  console.log(`${raceNumber} You will race at 9:30am`);
+} else if(runnerAge > 18 && !registeredEarly){
+  console.log(`${raceNumber} You will race at 11:00am`);
+} else if(runnerAge < 18){
+  console.log(`${raceNumber} You will race at 12.30pm`);
+} else {
+  console.log("Go to see the registration desk");
+}
