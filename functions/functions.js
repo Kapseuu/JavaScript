@@ -92,3 +92,14 @@ let plantNeedsWaterArrow = (day) => {
       return false;
     }
 };
+
+
+
+//Concise Body Arrow Functions 
+const plantNeedsWaterArrowFunctions = day => day === 'Wednesday' ? true : false;
+//     /\ this is same what this \/
+
+/*const plantNeedsWaterArrowFunctions = (day) => {
+    return day === 'Wednesday' ? true : false;
+};*/
+
