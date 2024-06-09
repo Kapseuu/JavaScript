@@ -85,3 +85,10 @@ console.log(plantNeedsWater("Tuesday"));
 
 
 //Arrow Functions
+let plantNeedsWaterArrow = (day) => {
+    if (day === 'Wednesday') {
+      return true;
+    } else {
+      return false;
+    }
+};
