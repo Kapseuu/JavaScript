@@ -17,3 +17,12 @@ function sayThanks(){
   sayThanks();
   sayThanks();
   sayThanks(); //you can call functions as many times as you want them
+
+
+
+//Parameters and Arguments
+function sayThanks(name) {
+    console.log('Thank you for your purchase '+ name + '! We appreciate your business.');
+  }
+  
+  sayThanks("Cole");
