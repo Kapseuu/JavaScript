@@ -22,4 +22,11 @@ console.log(callMyNightSky());
 
 
 
-//
+//Block Scope
+let logVisibleLightWaves = () => {
+    const lightWaves = "Moonlight";
+    console.log(lightWaves);
+  }
+  
+logVisibleLightWaves();
+//console.log(lightWaves); <-- It will output error
