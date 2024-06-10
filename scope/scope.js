@@ -27,13 +27,15 @@ let logVisibleLightWaves = () => {
     const lightWaves = "Moonlight";
     console.log(lightWaves);
   }
-  
-logVisibleLightWaves();
+
 //console.log(lightWaves); <-- It will output error
+logVisibleLightWaves();
+
 
 
 
 //Scope Pollution
+
 /*const satellite = 'The Moon';
 const galaxy = 'The Milky Way';
 let stars = 'North Star';
@@ -45,3 +47,18 @@ const callMyNightSky = () => {*/
 
 console.log(callMyNightSky());*/
 console.log(stars);
+
+
+
+//Practice Good Scoping
+const logVisibleLightWavesPractice = () => {
+    let lightWaves = 'Moonlight';
+      let region = 'The Arctic';
+    if(region === "The Arctic"){
+      let lightWaves = "Northern Lights";
+      console.log(lightWaves);
+    }
+    console.log(lightWaves);
+  };
+  
+  logVisibleLightWavesPractice();
