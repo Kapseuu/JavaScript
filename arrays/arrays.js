@@ -98,3 +98,14 @@ let numberClusters = [[1, 2], [3, 4], [5, 6]];
 
 const target = numberClusters[2][1];
 console.log(target);
+
+
+
+//The For Loop
+for(let loop = 5; loop <= 10; loop++){ //loop from 5 to 10
+  console.log(loop)
+}
+
+
+
+//
