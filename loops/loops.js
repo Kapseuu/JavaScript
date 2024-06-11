@@ -111,3 +111,35 @@ fruits.forEach(fruitsItem => console.log("I want to eat a " + fruitsItem));
 
 
 //The .map() Method
+const animals = ['Hen', 'elephant', 'llama', 'leopard', 'ostrich', 'Whale', 'octopus', 'rabbit', 'lion', 'dog'];
+
+const secretMessage = animals.map(animal => animal[0]);
+console.log(secretMessage.join(''));
+
+
+
+const bigNumbers = [100, 200, 300, 400, 500];
+
+const smallNumbers = bigNumbers.map(num => num/100);
+console.log(smallNumbers)
+
+
+
+//The .filter() Method
+const randomNumbers = [375, 200, 3.14, 7, 13, 852];
+
+const smallNumbersFilter = randomNumbers.filter(num => num < 250);
+console.log(randomNumbers);
+console.log(smallNumbersFilter);
+
+
+
+const favoriteWords = ['nostalgia', 'hyperbole', 'fervent', 'esoteric', 'serene'];
+
+const longFavoriteWords = favoriteWords.filter(word => word.length > 7);
+console.log(favoriteWords);
+console.log(longFavoriteWords);
+
+
+
+//
