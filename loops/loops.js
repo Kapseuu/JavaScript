@@ -100,3 +100,14 @@ const addTwo = num => {
   }
   
   console.log(checkConsistentOutput(addTwo, 10));  
+
+
+
+//The .forEach() Method
+const fruits = ['mango', 'papaya', 'pineapple', 'apple'];
+
+fruits.forEach(fruitsItem => console.log("I want to eat a " + fruitsItem));
+
+
+
+//The .map() Method
