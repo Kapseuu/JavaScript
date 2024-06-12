@@ -63,3 +63,41 @@ let alienShip = {
 };
 alienShip.retreat();
 alienShip.takeOff();
+
+
+
+//Nested Objects
+let spaceshipNested = {
+    passengers: [{name: "Jacob"}, {name: "Maya"}],
+    telescope: {
+      yearBuilt: 2018,
+      model: "91031-XLT",
+      focalLength: 2032 
+    },
+    crew: {
+      captain: { 
+        name: 'Sandra', 
+        degree: 'Computer Engineering', 
+        encourageTeam() { console.log('We got this!') },
+       'favorite foods': ['cookies', 'cakes', 'candy', 'spinach'] }
+    },
+    engine: {
+      model: "Nimbus2000"
+    },
+    nanoelectronics: {
+      computer: {
+        terabytes: 100,
+        monitors: "HD"
+      },
+      'back-up': {
+        battery: "Lithium",
+        terabytes: 50
+      }
+    }
+  }; 
+  
+  let capFave = spaceshipNested.crew.captain['favorite foods'][0];
+  console.log(capFave);
+  
+  let firstPassenger = spaceshipNested.passengers[0];
+  console.log(firstPassenger);
