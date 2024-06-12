@@ -105,7 +105,7 @@ let spaceshipNested = {
 
 
 //Pass By Reference
-let spaceship = {
+let spaceshipReference = {
     'Fuel Type' : 'Turbo Fuel',
     homePlanet : 'Earth'
 };
@@ -115,8 +115,8 @@ let greenEnergy = obj => {
     obj['Fuel Type'] = 'avocado oil';
 }
 
-greenEnergy(spaceship);
-console.log(spaceship);
+greenEnergy(spaceshipReference);
+console.log(spaceshipReference);
   
   
 let remotelyDisable = obj => {
@@ -125,3 +125,51 @@ let remotelyDisable = obj => {
   
 remotelyDisable(spaceship);
 console.log(spaceship);
+
+
+
+//Looping Through Objects for ... in
+let spaceshipLooping = {
+    crew: {
+      captain: {
+        name: "Lily",
+        degree: "Computer Engineering",
+        cheerTeam() {
+          console.log("You got this!");
+        },
+      },
+      "chief officer": {
+        name: "Dan",
+        degree: "Aerospace Engineering",
+        agree() {
+          console.log("I agree, captain!");
+        },
+      },
+      medic: {
+        name: "Clementine",
+        degree: "Physics",
+        announce() {
+          console.log(`Jets on!`);
+        },
+      },
+      translator: {
+        name: "Shauna",
+        degree: "Conservation Science",
+        powerFuel() {
+          console.log("The tank is full!");
+        },
+      },
+    },
+  };
+  
+  // Write your code below
+  for (let crewMember in spaceshipLooping.crew) {
+    console.log(`${crewMember}: ${spaceshipLooping.crew[crewMember].name}`);
+  }
+  
+  for (let crewMember in spaceship.crew) {
+    console.log(
+      `${spaceshipLooping.crew[crewMember].name}: ${spaceshipLooping.crew[crewMember].degree}`
+    );
+  }
+  
