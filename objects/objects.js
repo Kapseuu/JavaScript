@@ -47,3 +47,19 @@ console.log(spaceship.numEngines);
 spaceship['Secret Mission'] = 'Discover life outside of Earth.';
 delete spaceship['Secret Mission'];
 console.log(spaceship['Secret Mission']);
+
+
+
+//Methods
+let retreatMessage = 'We no longer wish to conquer your planet. It is full of dogs, which we do not care for.';
+
+let alienShip = {
+  retreat(){
+    console.log(retreatMessage);
+  },
+  takeOff(){
+    console.log('Spim... Borp... Glix... Blastoff!');
+  }
+};
+alienShip.retreat();
+alienShip.takeOff();
