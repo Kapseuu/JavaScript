@@ -101,3 +101,27 @@ let spaceshipNested = {
   
   let firstPassenger = spaceshipNested.passengers[0];
   console.log(firstPassenger);
+
+
+
+//Pass By Reference
+let spaceship = {
+    'Fuel Type' : 'Turbo Fuel',
+    homePlanet : 'Earth'
+};
+  
+
+let greenEnergy = obj => {
+    obj['Fuel Type'] = 'avocado oil';
+}
+
+greenEnergy(spaceship);
+console.log(spaceship);
+  
+  
+let remotelyDisable = obj => {
+    obj.disabled = true;
+}
+  
+remotelyDisable(spaceship);
+console.log(spaceship);
