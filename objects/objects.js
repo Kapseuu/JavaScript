@@ -23,3 +23,7 @@ console.log(planetArray);
 
 
 
+//Bracket Notation
+let propName =  'Active Mission';
+let isActive = spaceship['Active Mission'];
+console.log(spaceship[propName]);
