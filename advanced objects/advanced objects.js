@@ -87,8 +87,10 @@ console.log(robotSet.numOfSensors);
 //Factory Functions
 const robotFactory = (model, mobile) => {
   return{
-    model: model,
-    mobile: mobile,
+    //model: model,
+    model,
+    //mobile: mobile,
+    mobile,
     beep(){
       console.log('Beep Boop');
     }
