@@ -117,7 +117,6 @@ const robotDestructuredAssignment = {
 };
 
 const { functionality } = robotDestructuredAssignment;
-
 functionality.beep();
 
 
