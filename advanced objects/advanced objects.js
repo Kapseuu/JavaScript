@@ -19,4 +19,22 @@ const robotfunction = {
   }
 }
 
-robot.checkEnergy();
+robotfunction.checkEnergy();
+
+
+
+//Privacy
+const robotPrivacy = {
+  _energyLevel: 100,
+  recharge(){
+    this._energyLevel += 30;
+    console.log(`Recharged! Energy is currently at ${this._energyLevel}%.`)
+  }
+};
+
+console.log(robotPrivacy._energyLevel);
+
+robotPrivacy._energyLevel = "high";
+console.log(robotPrivacy._energyLevel);
+
+robotPrivacy.recharge();
