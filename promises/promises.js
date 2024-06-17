@@ -1,3 +1,4 @@
+//in bash => node app.js (we have promises.js)
 //Constructing a Promise Object
 const inventory = {
     sunglasses: 1900,
@@ -21,8 +22,32 @@ const inventory = {
   let orderPromise = orderSunglasses();
   
   console.log(orderPromise);
-//in bash => node app.js (we have promises.js)
 
 
 
-//
+//The Node setTimeout() Function
+console.log("This is the first line of code in app.js.");
+
+const usingSTO = () => {
+  console.log('esz');
+}
+setTimeout(usingSTO, 3000);
+console.log("This is the last line of code in app.js.");
+
+
+
+//Success and Failure Callback Functions
+const {checkInventory} = require('./library.js');
+
+const order = [['sunglasses', 1], ['bags', 2]];
+
+const handleSuccess = (resolvedValue) => {
+  console.log(resolvedValue);
+}
+
+const handleFailure = (rejectionReason) => { 
+  console.log(rejectionReason);
+}
+
+checkInventory(order)
+  .then(handleSuccess, handleFailure);
