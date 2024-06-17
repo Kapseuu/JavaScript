@@ -95,3 +95,26 @@ checkInventory(orderMultiple)
 .catch((errorMessage) => {
   console.log(errorMessage);
 });
+
+
+
+//Avoiding Common Mistakes
+const {checkInventory, processPayment, shipOrder} = require('./library.js');
+
+const orderMistakes = {
+  items: [['sunglasses', 1], ['bags', 2]],
+  giftcardBalance: 79.82
+};
+
+// Refactor the code below:
+
+checkInventory(orderMistakes)
+    .then((resolvedValueArray) => {
+        processPayment(resolvedValueArray)
+            .then((resolvedValueArray) => {
+                shipOrder(resolvedValueArray)
+                    .then((successMessage) => {
+                        console.log(successMessage);
+                    });
+            });
+    });
