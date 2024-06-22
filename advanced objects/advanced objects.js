@@ -53,7 +53,6 @@ const robotGet = {
     }
   }
 };
-
 console.log(robotGet.energyLevel);
 
 
