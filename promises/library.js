@@ -13,6 +13,7 @@ const store = {
     }
   };
   
+  
   const checkInventory = (order) => {
     return new Promise ((resolve, reject) => {
      setTimeout(()=> {  
@@ -32,6 +33,7 @@ const store = {
   }, generateRandomDelay());
    });
   };
+  
   
   const processPayment = (responseArray) => {
     const order = responseArray[0];
