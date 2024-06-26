@@ -76,5 +76,4 @@ const store = {
   function generateRandomDelay() {
     return Math.floor(Math.random() * 2000);
   }
-  
   module.exports = {checkInventory, processPayment, shipOrder};
