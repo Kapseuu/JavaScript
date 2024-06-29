@@ -23,6 +23,7 @@ const inventory = {
 
 
 
+
 //The Node setTimeout() Function
 console.log("This is the first line of code in app.js.");
 const usingSTO = () => {
@@ -73,7 +74,6 @@ checkInventory(orderCatch)
 
 //Chaining Multiple Promises
 const {checkInventory, processPayment, shipOrder} = require('./library.js');
-
 const orderMultiple = {
   items: [['sunglasses', 1], ['bags', 2]],
   giftcardBalance: 79.82
