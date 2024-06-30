@@ -104,7 +104,6 @@ const orderMistakes = {
 };
 
 // Refactor the code below:
-
 checkInventory(orderMistakes)
     .then((resolvedValueArray) => {
         processPayment(resolvedValueArray)
