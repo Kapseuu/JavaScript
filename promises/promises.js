@@ -23,7 +23,6 @@ const inventory = {
 
 
 
-
 //The Node setTimeout() Function
 console.log("This is the first line of code in app.js.");
 const usingSTO = () => {
