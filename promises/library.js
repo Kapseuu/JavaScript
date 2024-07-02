@@ -35,6 +35,7 @@ const store = {
   };
   
   
+  
   const processPayment = (responseArray) => {
     const order = responseArray[0];
     const total = responseArray[1];
