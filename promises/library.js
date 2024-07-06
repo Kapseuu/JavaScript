@@ -66,7 +66,6 @@ const store = {
   }, generateRandomDelay());
    });
   };
-  
   // This function generates a random number to serve as a "tracking number" on the shipping label. In real life this wouldn't be a random number
   function generateTrackingNumber() {
     return Math.floor(Math.random() * 1000000);
