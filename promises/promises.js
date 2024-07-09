@@ -75,7 +75,6 @@ const orderMultiple = {
   items: [['sunglasses', 1], ['bags', 2]],
   giftcardBalance: 79.82
 };
-
 checkInventory(orderMultiple)
 .then((resolvedValueArray) => {
  return processPayment(resolvedValueArray);
