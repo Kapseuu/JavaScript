@@ -13,7 +13,6 @@ const store = {
     }
   };
   
-
   const checkInventory = (order) => {
     return new Promise ((resolve, reject) => {
      setTimeout(()=> {  
