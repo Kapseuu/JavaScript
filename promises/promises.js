@@ -89,7 +89,6 @@ checkInventory(orderMultiple)
   console.log(errorMessage);
 });
 
-
 //Avoiding Common Mistakes
 const {checkInventory, processPayment, shipOrder} = require('./library.js');
 const orderMistakes = {
